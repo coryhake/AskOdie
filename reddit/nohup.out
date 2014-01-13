@@ -1,0 +1,584 @@
+# command-line-arguments
+./reddit.go:20: undefined: subreddit
+# command-line-arguments
+./reddit.go:20: undefined: subreddit
+2013/11/23 16:24:25 handling reddit front
+2013/11/23 16:24:25 handling reddit sub $subreddit
+2013/11/23 16:24:25 handling reddit user $username
+2013/11/23 16:24:25 handling reddit help
+2013/11/23 16:24:25 AppID: e34f21c7-a01e-4d55-807c-640da0dc6ebb
+2013/11/23 16:25:18 no match shorten http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012011/reddit-logo2.png
+exit status 2
+2013/11/23 16:25:36 handling reddit front
+2013/11/23 16:25:36 handling reddit sub $subreddit
+2013/11/23 16:25:36 handling reddit user $username
+2013/11/23 16:25:36 handling reddit help
+2013/11/23 16:25:36 AppID: 43759082-9106-47db-9b9b-c92d472ffefe
+2013/11/23 16:27:58 no match shorten http://coryhakecs4830-27398.usw1.actionbox.io:8006/reddit/reddit.go
+exit status 2
+2013/11/23 16:28:34 handling reddit front
+2013/11/23 16:28:34 handling reddit sub $subreddit
+2013/11/23 16:28:34 handling reddit user $username
+2013/11/23 16:28:34 handling reddit help
+2013/11/23 16:28:34 AppID: 504714fc-c4bc-44ef-b31f-62a8fe8098b5
+2013/11/23 16:29:49 no match shorten http://coryhakecs4830-27398.usw1.actionbox.io:8006/math/math.go
+2013/11/23 16:30:22 no match math help
+2013/11/23 16:35:58 no match shorten http://static1.businessinsider.com/image/51f7bdd169bedd1e38000003-480-/google-gopher.png
+2013/11/23 16:36:33 no match math help
+2013/11/23 16:42:48 no match math help
+2013/11/23 16:46:48 no match math help
+2013/11/23 16:47:42 no match shorten http://blogs.computerworld.com/sites/default/themes/cw_blogs/cache/files/u34/gogopher-200.gif
+2013/11/23 16:48:49 no match math help
+2013/11/23 16:49:39 no match math help
+2013/11/23 16:51:07 no match math help
+2013/11/23 16:51:36 no match math help
+exit status 2
+2013/11/23 16:52:21 handling reddit front
+2013/11/23 16:52:21 handling reddit sub $subreddit
+2013/11/23 16:52:21 handling reddit user $username
+2013/11/23 16:52:21 handling reddit help
+2013/11/23 16:52:21 AppID: d99fb9b5-9332-47ac-95f9-04af6f1c5083
+2013/11/23 16:52:26 no match REDDIT HEKP
+exit status 2
+2013/11/23 16:53:36 handling reddit front
+2013/11/23 16:53:36 handling reddit sub $subreddit
+2013/11/23 16:53:36 handling reddit user $username
+2013/11/23 16:53:36 handling reddit help
+2013/11/23 16:53:36 AppID: 7133b106-d219-4d06-8207-0d4abae784b8
+exit status 2
+2013/11/23 17:09:54 handling reddit front
+2013/11/23 17:09:54 handling reddit sub $subreddit
+2013/11/23 17:09:54 handling reddit user $username
+2013/11/23 17:09:54 handling reddit help
+2013/11/23 17:09:54 AppID: c128cbfa-788e-4f61-9212-ca380b8a9345
+2013/11/23 22:41:14 no match shorten www.baidu.com
+2013/11/24 04:02:48 no match hello
+2013/11/24 04:16:37 no match hello
+2013/11/24 05:09:22 no match twitter nba
+2013/11/24 05:09:29 no match fuck off
+2013/11/25 02:56:55 404 Not Found
+2013/11/25 02:56:56 invalid character '<' looking for beginning of value
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal 0xb code=0x1 addr=0x90 pc=0x401234]
+
+goroutine 1 [running]:
+main.subHandler(0xc2000f0390, 0xc20146f630, 0xc2000f72c0)
+	/home/action/workspace/odie/reddit/reddit.go:43 +0x214
+code.google.com/p/odie.(*Matcher).SubscribeAndServe(0xc2006ad820, 0xc2006adee0, 0x40232b, 0x6c35d0)
+	/home/action/workspace/src/code.google.com/p/odie/odie.go:210 +0x461
+code.google.com/p/odie.SubscribeAndServe(0xc2006adee0)
+	/home/action/workspace/src/code.google.com/p/odie/odie.go:238 +0x32
+main.main()
+	/home/action/workspace/odie/reddit/reddit.go:103 +0x5d
+
+goroutine 2 [syscall]:
+
+goroutine 11 [select]:
+net/http.(*persistConn).roundTrip(0xc2000e6600, 0xc2000ef870, 0xc2000e6600, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/transport.go:857 +0x6c7
+net/http.(*Transport).RoundTrip(0xc2000e6080, 0xc2000f8340, 0xc2014760c8, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/transport.go:186 +0x396
+net/http.send(0xc2000f8340, 0xc2000b38d0, 0xc2000e6080, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:166 +0x3a1
+net/http.(*Client).send(0xc319c0, 0xc2000f8340, 0x45, 0x1, 0xc2000f71c0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:100 +0xcd
+net/http.(*Client).doFollowingRedirects(0xc319c0, 0xc2000f8340, 0x714630, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:282 +0x5ff
+net/http.(*Client).Get(0xc319c0, 0xc2000b0fa0, 0x45, 0x7fd862bace18, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:236 +0xb0
+net/http.Get(0xc2000b0fa0, 0x45, 0x18, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:213 +0x4e
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:371 +0xbc
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc20146f180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+created by code.google.com/p/feedgraph.Listen
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:362 +0x5e
+
+goroutine 9 [IO wait]:
+net.runtime_pollWait(0x7fd87a050f00, 0x72, 0x0)
+	/usr/local/go/src/pkg/runtime/znetpoll_linux_amd64.c:118 +0x82
+net.(*pollDesc).WaitRead(0xc2000c6080, 0xb, 0xc20146f030)
+	/usr/local/go/src/pkg/net/fd_poll_runtime.go:75 +0x31
+net.(*netFD).Read(0xc2000c6000, 0xc201473000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/fd_unix.go:195 +0x2b3
+net.(*conn).Read(0xc201468590, 0xc201473000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/net.go:123 +0xc3
+bufio.(*Reader).fill(0xc2000e55a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).Peek(0xc2000e55a0, 0x1, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:107 +0xc9
+net/http.(*persistConn).readLoop(0xc2000e6600)
+	/usr/local/go/src/pkg/net/http/transport.go:670 +0xc4
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:511 +0x574
+
+goroutine 10 [select]:
+net/http.(*persistConn).writeLoop(0xc2000e6600)
+	/usr/local/go/src/pkg/net/http/transport.go:774 +0x26f
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:512 +0x58b
+
+goroutine 13 [IO wait]:
+net.runtime_pollWait(0x7fd87a050e60, 0x72, 0x0)
+	/usr/local/go/src/pkg/runtime/znetpoll_linux_amd64.c:118 +0x82
+net.(*pollDesc).WaitRead(0xc2000c6500, 0xb, 0xc20146f030)
+	/usr/local/go/src/pkg/net/fd_poll_runtime.go:75 +0x31
+net.(*netFD).Read(0xc2000c6480, 0xc201496000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/fd_unix.go:195 +0x2b3
+net.(*conn).Read(0xc201468860, 0xc201496000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/net.go:123 +0xc3
+bufio.(*Reader).fill(0xc2000e5a20)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).Peek(0xc2000e5a20, 0x1, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:107 +0xc9
+net/http.(*persistConn).readLoop(0xc2000e6980)
+	/usr/local/go/src/pkg/net/http/transport.go:670 +0xc4
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:511 +0x574
+
+goroutine 14 [select]:
+net/http.(*persistConn).writeLoop(0xc2000e6980)
+	/usr/local/go/src/pkg/net/http/transport.go:774 +0x26f
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:512 +0x58b
+
+goroutine 1038 [select]:
+net/http.(*persistConn).writeLoop(0xc2000f9700)
+	/usr/local/go/src/pkg/net/http/transport.go:774 +0x26f
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:512 +0x58b
+
+goroutine 1037 [runnable]:
+net/http.(*persistConn).readLoop(0xc2000f9700)
+	/usr/local/go/src/pkg/net/http/transport.go:761 +0x64b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:511 +0x574
+exit status 2
+2013/11/25 02:57:36 handling reddit front
+2013/11/25 02:57:36 handling reddit sub $subreddit
+2013/11/25 02:57:36 handling reddit user $username
+2013/11/25 02:57:36 handling reddit help
+2013/11/25 02:57:36 AppID: f2dd025f-405d-41fc-b501-1a4df64a0438
+2013/11/25 02:57:48 404 Not Found
+2013/11/25 02:57:49 invalid character '<' looking for beginning of value
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal 0xb code=0x1 addr=0x90 pc=0x401234]
+
+goroutine 1 [running]:
+main.subHandler(0xc2014a1720, 0xc201465630, 0xc2014a27c0)
+	/home/action/workspace/odie/reddit/reddit.go:43 +0x214
+code.google.com/p/odie.(*Matcher).SubscribeAndServe(0xc2007ac8a0, 0xc2007acf20, 0x40232b, 0x6c35d0)
+	/home/action/workspace/src/code.google.com/p/odie/odie.go:210 +0x461
+code.google.com/p/odie.SubscribeAndServe(0xc2007acf20)
+	/home/action/workspace/src/code.google.com/p/odie/odie.go:238 +0x32
+main.main()
+	/home/action/workspace/odie/reddit/reddit.go:103 +0x5d
+
+goroutine 2 [syscall]:
+
+goroutine 11 [select]:
+net/http.(*persistConn).roundTrip(0xc2000e6600, 0xc20149fad0, 0xc2000e6600, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/transport.go:857 +0x6c7
+net/http.(*Transport).RoundTrip(0xc2000e6080, 0xc201466b60, 0xc20145f018, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/transport.go:186 +0x396
+net/http.send(0xc201466b60, 0xc2000b38d0, 0xc2000e6080, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:166 +0x3a1
+net/http.(*Client).send(0xc319c0, 0xc201466b60, 0x45, 0x1, 0xc2014a26c0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:100 +0xcd
+net/http.(*Client).doFollowingRedirects(0xc319c0, 0xc201466b60, 0x714630, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:282 +0x5ff
+net/http.(*Client).Get(0xc319c0, 0xc2000b0f50, 0x45, 0x7fe896bfae18, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:236 +0xb0
+net/http.Get(0xc2000b0f50, 0x45, 0x18, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:213 +0x4e
+code.google.com/p/feedgraph.listen(0xc201465180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:371 +0xbc
+code.google.com/p/feedgraph.listen(0xc201465180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc201465180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+created by code.google.com/p/feedgraph.Listen
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:362 +0x5e
+
+goroutine 9 [IO wait]:
+net.runtime_pollWait(0x7fe896c7bf00, 0x72, 0x0)
+	/usr/local/go/src/pkg/runtime/znetpoll_linux_amd64.c:118 +0x82
+net.(*pollDesc).WaitRead(0xc2000c6080, 0xb, 0xc201465030)
+	/usr/local/go/src/pkg/net/fd_poll_runtime.go:75 +0x31
+net.(*netFD).Read(0xc2000c6000, 0xc201469000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/fd_unix.go:195 +0x2b3
+net.(*conn).Read(0xc20145e590, 0xc201469000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/net.go:123 +0xc3
+bufio.(*Reader).fill(0xc2000e55a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).Peek(0xc2000e55a0, 0x1, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:107 +0xc9
+net/http.(*persistConn).readLoop(0xc2000e6600)
+	/usr/local/go/src/pkg/net/http/transport.go:670 +0xc4
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:511 +0x574
+
+goroutine 10 [select]:
+net/http.(*persistConn).writeLoop(0xc2000e6600)
+	/usr/local/go/src/pkg/net/http/transport.go:774 +0x26f
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:512 +0x58b
+
+goroutine 13 [IO wait]:
+net.runtime_pollWait(0x7fe896c7be60, 0x72, 0x0)
+	/usr/local/go/src/pkg/runtime/znetpoll_linux_amd64.c:118 +0x82
+net.(*pollDesc).WaitRead(0xc2000c6500, 0xb, 0xc201465030)
+	/usr/local/go/src/pkg/net/fd_poll_runtime.go:75 +0x31
+net.(*netFD).Read(0xc2000c6480, 0xc201499000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/fd_unix.go:195 +0x2b3
+net.(*conn).Read(0xc20145e860, 0xc201499000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/net.go:123 +0xc3
+bufio.(*Reader).fill(0xc2000e5a80)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).Peek(0xc2000e5a80, 0x1, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:107 +0xc9
+net/http.(*persistConn).readLoop(0xc2000e6980)
+	/usr/local/go/src/pkg/net/http/transport.go:670 +0xc4
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:511 +0x574
+
+goroutine 14 [select]:
+net/http.(*persistConn).writeLoop(0xc2000e6980)
+	/usr/local/go/src/pkg/net/http/transport.go:774 +0x26f
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:512 +0x58b
+
+goroutine 26 [select]:
+net/http.(*persistConn).writeLoop(0xc2014a3380)
+	/usr/local/go/src/pkg/net/http/transport.go:774 +0x26f
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:512 +0x58b
+
+goroutine 25 [runnable]:
+net/http.(*persistConn).readLoop(0xc2014a3380)
+	/usr/local/go/src/pkg/net/http/transport.go:761 +0x64b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:511 +0x574
+exit status 2
+2013/11/25 02:57:57 handling reddit front
+2013/11/25 02:57:57 handling reddit sub $subreddit
+2013/11/25 02:57:57 handling reddit user $username
+2013/11/25 02:57:57 handling reddit help
+2013/11/25 02:57:57 AppID: fc0b01b8-d9da-420c-8821-06eddcf62cc9
+exit status 2
+2013/11/25 03:01:46 handling reddit front
+2013/11/25 03:01:46 handling reddit sub $subreddit
+2013/11/25 03:01:46 handling reddit user $username
+2013/11/25 03:01:46 handling reddit help
+2013/11/25 03:01:46 AppID: 0692f07f-1dfe-4dcd-8bf4-3b0a5031c747
+2013/11/25 03:01:54 404 Not Found
+exit status 2
+# command-line-arguments
+./reddit.go:33: syntax error: unexpected name, expecting )
+./reddit.go:40: syntax error: unexpected name, expecting )
+# command-line-arguments
+./reddit.go:33: syntax error: unexpected name, expecting )
+./reddit.go:40: syntax error: unexpected name, expecting )
+2013/11/25 03:04:52 handling reddit front
+2013/11/25 03:04:52 handling reddit sub $subreddit
+2013/11/25 03:04:52 handling reddit user $username
+2013/11/25 03:04:52 handling reddit help
+2013/11/25 03:04:52 AppID: c49fdcae-b133-44f2-b122-926881e1451f
+2013/11/25 03:05:04 ERROR IN CALL - AboutSubreddit:  404 Not Found
+exit status 2
+2013/11/25 03:07:10 handling reddit front
+2013/11/25 03:07:10 handling reddit sub $subreddit
+2013/11/25 03:07:10 handling reddit user $username
+2013/11/25 03:07:10 handling reddit help
+2013/11/25 03:07:10 AppID: dea81c6b-214e-4da4-b6cf-5b8dd31d98f9
+2013/11/25 03:07:30 ERROR IN CALL - AboutSubreddit:  404 Not Found
+2013/11/25 03:07:55 ERROR IN CALL - AboutRedditor:  404 Not Found
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal 0xb code=0x1 addr=0x0 pc=0x401e5d]
+
+goroutine 1 [running]:
+main.redditorHandler(0xc20153f5d0, 0xc201459630, 0xc2015424c0)
+	/home/action/workspace/odie/reddit/reddit.go:74 +0x31d
+code.google.com/p/odie.(*Matcher).SubscribeAndServe(0xc2007b74c0, 0xc2007b7be0, 0x40262b, 0x6c38d0)
+	/home/action/workspace/src/code.google.com/p/odie/odie.go:210 +0x461
+code.google.com/p/odie.SubscribeAndServe(0xc2007b7be0)
+	/home/action/workspace/src/code.google.com/p/odie/odie.go:238 +0x32
+main.main()
+	/home/action/workspace/odie/reddit/reddit.go:108 +0x5d
+
+goroutine 2 [syscall]:
+
+goroutine 11 [select]:
+net/http.(*persistConn).roundTrip(0xc2000e6600, 0xc201534d60, 0xc2000e6600, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/transport.go:857 +0x6c7
+net/http.(*Transport).RoundTrip(0xc2000e6080, 0xc20153c340, 0xc201460a68, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/transport.go:186 +0x396
+net/http.send(0xc20153c340, 0xc2000b38d0, 0xc2000e6080, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:166 +0x3a1
+net/http.(*Client).send(0xc319c0, 0xc20153c340, 0x45, 0x1, 0xc201542380, ...)
+	/usr/local/go/src/pkg/net/http/client.go:100 +0xcd
+net/http.(*Client).doFollowingRedirects(0xc319c0, 0xc20153c340, 0x714a70, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:282 +0x5ff
+net/http.(*Client).Get(0xc319c0, 0xc201539230, 0x45, 0x7fc8c3c42c68, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:236 +0xb0
+net/http.Get(0xc201539230, 0x45, 0x18, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/net/http/client.go:213 +0x4e
+code.google.com/p/feedgraph.listen(0xc201459180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:371 +0xbc
+code.google.com/p/feedgraph.listen(0xc201459180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc201459180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc201459180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc201459180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+code.google.com/p/feedgraph.listen(0xc201459180, 0x24, 0xc2000e5600, 0x0, 0x0, ...)
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:397 +0x2ac
+created by code.google.com/p/feedgraph.Listen
+	/home/action/workspace/src/code.google.com/p/feedgraph/feedgraph.go:362 +0x5e
+
+goroutine 9 [IO wait]:
+net.runtime_pollWait(0x7fc8c3cc3f00, 0x72, 0x0)
+	/usr/local/go/src/pkg/runtime/znetpoll_linux_amd64.c:118 +0x82
+net.(*pollDesc).WaitRead(0xc2000c6080, 0xb, 0xc201459030)
+	/usr/local/go/src/pkg/net/fd_poll_runtime.go:75 +0x31
+net.(*netFD).Read(0xc2000c6000, 0xc20145d000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/fd_unix.go:195 +0x2b3
+net.(*conn).Read(0xc201452598, 0xc20145d000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/net.go:123 +0xc3
+bufio.(*Reader).fill(0xc2000e55a0)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).Peek(0xc2000e55a0, 0x1, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:107 +0xc9
+net/http.(*persistConn).readLoop(0xc2000e6600)
+	/usr/local/go/src/pkg/net/http/transport.go:670 +0xc4
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:511 +0x574
+
+goroutine 10 [select]:
+net/http.(*persistConn).writeLoop(0xc2000e6600)
+	/usr/local/go/src/pkg/net/http/transport.go:774 +0x26f
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:512 +0x58b
+
+goroutine 13 [IO wait]:
+net.runtime_pollWait(0x7fc8c3cc3e60, 0x72, 0x0)
+	/usr/local/go/src/pkg/runtime/znetpoll_linux_amd64.c:118 +0x82
+net.(*pollDesc).WaitRead(0xc2000c6500, 0xb, 0xc201459030)
+	/usr/local/go/src/pkg/net/fd_poll_runtime.go:75 +0x31
+net.(*netFD).Read(0xc2000c6480, 0xc201480000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/fd_unix.go:195 +0x2b3
+net.(*conn).Read(0xc201452868, 0xc201480000, 0x1000, 0x1000, 0x0, ...)
+	/usr/local/go/src/pkg/net/net.go:123 +0xc3
+bufio.(*Reader).fill(0xc2000e5a20)
+	/usr/local/go/src/pkg/bufio/bufio.go:79 +0x10c
+bufio.(*Reader).Peek(0xc2000e5a20, 0x1, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/pkg/bufio/bufio.go:107 +0xc9
+net/http.(*persistConn).readLoop(0xc2000e6980)
+	/usr/local/go/src/pkg/net/http/transport.go:670 +0xc4
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:511 +0x574
+
+goroutine 14 [select]:
+net/http.(*persistConn).writeLoop(0xc2000e6980)
+	/usr/local/go/src/pkg/net/http/transport.go:774 +0x26f
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/pkg/net/http/transport.go:512 +0x58b
+exit status 2
+2013/11/25 03:08:35 handling reddit front
+2013/11/25 03:08:35 handling reddit sub $subreddit
+2013/11/25 03:08:35 handling reddit user $username
+2013/11/25 03:08:35 handling reddit help
+2013/11/25 03:08:35 AppID: b2677d56-7749-4a0a-b252-259dd65e8a34
+2013/11/25 03:08:46 ERROR IN CALL - AboutRedditor:  404 Not Found
+2013/11/25 04:54:15 no match hello
+2013/11/25 05:00:19 no match myip
+2013/11/25 05:08:14 no match raddit pack
+2013/11/25 05:21:08 no match reddit
+2013/11/25 05:42:40 no match ESPN headlines
+2013/11/25 05:42:45 no match ESPN headlines
+2013/11/25 05:43:38 no match ESPN headlines
+2013/11/25 05:44:13 no match ESPN headlines
+2013/11/25 05:45:05 no match ESPN headlines
+2013/11/25 06:58:56 no match ESPN headlines
+2013/11/25 07:00:29 no match ESPN headlines
+2013/11/25 07:02:23 no match ESPN headlines
+2013/11/25 07:05:34 no match ESPN headlines
+2013/11/25 07:06:09 no match ESPN headlines
+2013/11/25 20:19:48 no match he;
+2013/11/25 20:19:55 no match myip
+2013/11/25 20:29:12 no match Cleveland rocks
+2013/11/25 20:32:07 no match draw obama
+2013/11/25 20:32:25 no match weather
+2013/11/25 21:07:03 no match What is the weather like in Carthage,MO
+2013/11/25 21:07:31 no match Cleveland rocks!
+2013/11/25 21:07:42 no match C
+2013/11/25 21:07:57 no match Cleveland rocks!
+2013/11/25 21:09:29 no match Cleveland rocks
+2013/11/25 21:14:57 no match What is the weather like in St. Louis,MO
+2013/11/25 21:17:32 no match Cleveland rocks
+2013/11/25 21:17:38 no match Cleveland Rocks
+2013/11/25 21:23:40 no match What is the weather like in Columbia,MO
+2013/11/25 21:35:34 no match What is the weather like in carthage,mo
+2013/11/25 21:36:39 no match What is the weather like in Billings,MO
+2013/11/25 21:37:22 no match What is the weather like in Columbia,MO
+2013/11/25 21:41:05 no match What is the weather like in columbia,MO
+2013/11/25 21:42:06 no match What is the weather like in Columbia,MO
+2013/11/25 21:46:40 no match What is the weather like in Columbia,MO
+2013/11/25 21:47:36 no match What is the weather like in columbia,mo
+2013/11/25 21:52:53 no match myip
+2013/11/25 21:57:08 no match What is the weather like in Columbia,MO
+2013/11/25 22:14:50 no match What is the weather like in Columbia,MO
+2013/11/25 22:15:22 no match What is the weather like in Houston,TX
+2013/11/25 22:15:43 no match What is the weather like in Columbia,MO
+2013/11/25 22:21:47 no match What is the weather like in Columbia,MO
+2013/11/25 22:23:25 no match What is the weather like in Columbia,MO
+2013/11/25 22:23:44 no match What is the weather like in Houston,TX
+2013/11/25 22:27:00 no match What is the weather like in Columbia,MO
+2013/11/25 22:27:11 no match What is the weather like in Houston, TX
+2013/11/25 22:27:59 no match What is the weather like in Unicorn,MD
+2013/11/25 22:28:44 no match Cleveland rocks
+2013/11/25 22:29:06 no match What is the weather like in Columbia,MO
+2013/11/25 22:29:13 no match What is the weather like in Unicorn,md
+2013/11/25 22:29:16 no match what is the weather in columbia
+2013/11/25 22:29:36 no match myip
+2013/11/25 22:30:06 no match What is the weather like in Columbia,MO
+2013/11/25 22:30:15 no match What is the weather like in NSDF,nd
+2013/11/25 22:31:27 no match What is the weather like in Columbia,MO
+2013/11/25 22:34:27 no match What is the weather like in asfdasd,asdfasd
+2013/11/25 22:38:11 no match What is the weather like in $asdfasd,asdfasd
+2013/11/25 22:38:25 no match What is the weather like in Columbia,MO
+2013/11/25 22:38:41 no match What is the weather like in London
+2013/11/25 22:38:54 no match What is the weather like in Barcelona
+2013/11/25 22:39:06 no match What is the weather like in amsterdam
+2013/11/25 22:39:21 no match what is the weather like in england
+2013/11/25 22:39:31 no match what is the weather like in houston,tx
+2013/11/25 22:40:09 no match what is the weather like in st. louis, mo
+2013/11/25 22:40:32 no match who
+2013/11/25 22:47:44 no match what is the weather like in joplin mo
+2013/11/25 22:48:11 no match what is the weather like in houston tx
+2013/11/25 22:48:23 no match What is the weather like in Houston,TX
+2013/11/25 22:48:32 no match What is the weather like in Joplin,MO
+2013/11/25 22:53:27 no match What is the weather like in Columbia,MO
+2013/11/25 22:53:43 no match What is the weather like in Houston,TX
+2013/11/25 22:53:57 no match what is the weather like in london
+2013/11/26 02:40:39 no match What is the weather like in Billings,MO
+2013/11/26 03:00:08 no match What is the weather like in Columbia,MO
+2013/11/26 03:00:26 no match What is the weather like in Republic,MO
+2013/11/26 03:00:57 no match What is the weather like in Springfield,MO
+2013/11/26 03:01:11 no match What is the weather like in Springfield,IL
+2013/11/26 04:26:20 no match What is the weather like in Tokyo
+2013/11/26 04:27:03 no match What is the weather like in Tulsa,OK
+2013/11/26 04:33:11 no match What is the weather like in Sand Springs, OK
+2013/11/26 04:33:25 no match What is the weather like in Tulsa,OK
+2013/11/26 04:33:52 no match What is the weather like in london
+2013/11/27 02:10:02 no match what is the weather like in houston,texas
+2013/12/05 18:27:04 handling reddit front
+2013/12/05 18:27:04 handling reddit sub $subreddit
+2013/12/05 18:27:04 handling reddit user $username
+2013/12/05 18:27:04 handling reddit help
+2013/12/05 18:27:04 AppID: af1cc31d-080f-4c38-bded-aa15752fe284
+2013/12/05 18:40:56 no match show me some fantasy news
+2013/12/05 18:55:08 no match mizzou logo
+2013/12/05 19:16:15 no match Show me some fantasy news
+2013/12/05 19:40:06 no match show me some fantasy news
+2013/12/05 19:41:53 no match show me some fantasy news
+2013/12/05 19:42:32 no match show me some fantasy news
+2013/12/05 20:01:07 no match Translate to ERRMAHGERD take it to the class
+2013/12/05 20:15:48 no match how would yoda say shit
+2013/12/05 20:15:56 no match How would Yoda say shit
+2013/12/05 20:16:18 no match how would yoda say fuck
+2013/12/05 20:16:34 no match helo
+2013/12/05 20:30:52 no match Translate to ERRMAHGERD oh my god
+2013/12/05 20:31:11 no match new reports 1
+2013/12/05 20:31:38 no match new reports 10
+2013/12/05 20:32:20 no match Translate to ERRMAHGERD why did you kill my server
+2013/12/05 20:33:36 no match mizzou logo
+2013/12/05 20:34:03 no match show me some fantasy news
+2013/12/05 20:34:39 no match Translate to ERRMAHGERD why do you keep giving an error
+2013/12/05 20:40:33 no match Translate to ERRMAHGERD ohmygod hotspot
+2013/12/05 20:41:50 no match Translate to ERRMAHGERD I wish you would work
+2013/12/05 20:47:54 no match 5+6
+2013/12/05 20:47:59 no match 5+6
+2013/12/05 20:48:28 no match math
+2013/12/05 20:48:31 no match math
+2013/12/05 20:48:45 no match mizzou logo
+2013/12/05 20:49:15 no match what is the weather like in Columbia, Mo
+2013/12/05 21:31:53 no match rewant;h
+2013/12/05 21:31:55 no match rewanth
+2013/12/05 21:31:57 no match rewanth
+2013/12/08 16:51:30 handling reddit front
+2013/12/08 16:51:30 handling reddit sub $subreddit
+2013/12/08 16:51:30 handling reddit user $username
+2013/12/08 16:51:30 handling reddit help
+2013/12/08 16:51:30 AppID: 71b85c96-054a-49fb-b5ba-b3fc5677e7aa
+2013/12/08 17:28:49 no match what are the top 10000 songs in spain
+2013/12/08 18:25:34 no match Translate to ERRMAHGERD hotspot
+2013/12/08 18:28:59 no match obama
+2013/12/08 18:29:26 no match Draw rectangle 100 50
+2013/12/08 18:29:31 no match Obama
+2013/12/08 18:29:54 no match Show Obama
+2013/12/08 18:30:35 no match what is the top song in India
+2013/12/08 18:31:07 no match what are the top 49 songs in India
+2013/12/08 19:09:53 no match what is the top song in india
+2013/12/08 19:10:20 no match what is the top song in usa
+2013/12/08 19:10:43 no match what is the top song in america
+2013/12/08 19:11:07 no match what is the top song in china
+2013/12/08 19:24:45 no match Show Obama
+2013/12/08 19:25:26 no match multiply 4 5
